@@ -1,0 +1,49 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% include "header.html" %}
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/home-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          {% if current_weather: %}
+          <h1>{{ current_weather }}</h1>
+          {% else: %}
+          <h1>Welcome the Weather Alerts</h1>
+          {% endif %}
+          <span class="subheading">Get the weather forecast for any location you want.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <!-- Location form-->
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+          {{render_form(location_form, novalidate=True, button_map={"submit": "primary"}) }}
+          </div>
+        </div>
+      </div>
+      <!-- Divider-->
+      <hr class="my-4" />
+
+      <!-- Pager-->
+      {% if current_weather: %}
+      <div class="d-flex justify-content-end mb-4">
+        <p>"Send this weather message to keep your loved ones informed and safe from inclement weather."</p>
+        <a class="btn btn-secondary text-uppercase" href="{{ url_for('send_message', current_weather=current_weather) }}">Send Message</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
