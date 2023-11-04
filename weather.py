@@ -26,11 +26,11 @@ class Weather:
         if int(condition_code) < 600:
             current_weather = "It's going to rain today. Remember to bring an ☔️"
         elif 600 <= int(condition_code) < 700:
-            current_weather = "It's going to snow today. Remember to wear a hat, gloves, boots and coats"
+            current_weather = "It's going to snow today. Remember to wear a 🎩, 🧤, 🥾and 🧥"
         elif int(condition_code) == 800:
-            current_weather = "It's going to clear today. It is a beautiful day!"
+            current_weather = "It's going to clear today. It is a beautiful day☀️!"
         elif 801 <= int(condition_code) < 805:
-            current_weather = "It's going to cloud today. Remember to wear a umbrella, boots and coats"
+            current_weather = "It's going to cloud today. Remember to wear an ☔️,  🥾 and 🧥"
 
         return current_weather
 

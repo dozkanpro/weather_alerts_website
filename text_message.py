@@ -10,6 +10,11 @@ class Message:
         self.client = Client(account_sid, auth_token)
 
     def send_text_message(self, weather, phone_number):
+        validation_request = self.client.validation_requests \
+            .create(
+            friendly_name='My Phone Number',
+            phone_number=phone_number
+        )
         message = self.client.messages \
             .create(
             body=weather,
