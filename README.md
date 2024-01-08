@@ -9,7 +9,7 @@ This project utilizes Flask for the web framework, OpenWeatherMap to access curr
 - **Lat-Long Information:** Navigates a [website](https://www.latlong.net/) via 'Find Lat-Long' menu to  find  latitude and longitude of your desired location. 
 - **Weather Map:** Navigates the user access to a [weather website](https://www.ventusky.com/) via 'Find Weather Map' menu to verify the weather forecast.
 
-## Technology Used:
+## Technology Used
  - Flask
  - Flask-WTF
  - Flask-Bootstrap
