@@ -4,8 +4,8 @@ Weather Alerts is a Flask web application that integrate a [Weather API](https:/
 This project utilizes Flask for the web framework, OpenWeather to access current weather data, and Twilio to send message.
 
 ## Features
-- **Billboard Web Scraping:** Fetches the top 100 songs from the Billboard Hot 100 chart for a specific date.
-- **Spotify Integration:** Creates a Spotify playlist based on the fetched songs.
+- **Current Weather Information:** Gets current weather information for a specific location via Open Weather API.
+- **Twilio Integration:** Sends the weather information to whoever you want as a text message.
 - **Pagination:** Displays the song list with pagination to navigate through the results.
 - **User Interaction:** Allows users to input a date to retrieve songs from that specific time.
 
