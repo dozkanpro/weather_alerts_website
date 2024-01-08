@@ -39,6 +39,14 @@ This project utilizes Flask for the web framework, OpenWeather to access current
   - **Access the Application:** Open your web browser and navigate to http://localhost:5000 to access the application.
 
 ## Screenshots
+ - Home Page:    
+   <div align="center"><img src="weather_alert_1.png" alt="UI Screenshot"/></div>
+
+ - The Current weather information on the entered location:    
+   <div align="center"><img src="weather_alert_2.png" alt="UI Screenshot"/></div>
+
+  - Send a text message to keep your loved ones informed about the weather information:    
+   <div align="center"><img src="weather_alert_3.png" alt="UI Screenshot"/></div> 
 
 ## Contributing
    Contributions are welcome! Please fork the repository and create a pull request with your changes.
