@@ -6,9 +6,10 @@ from wtforms.validators import DataRequired, ValidationError
 import phonenumbers
 from weather import Weather
 from text_message import Message
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '3BYkEfZA3donzWlSihBXox12C0sKR6cde'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY_WEATHER')
 Bootstrap5(app)
 
 
