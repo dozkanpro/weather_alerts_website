@@ -28,7 +28,10 @@ This project utilizes Flask for the web framework, OpenWeather to access current
     ```
     pip install -r requirements.txt
     ```
-  - **Set Environment Variables:** Ensure you have your Spotify API credentials such as 'SPOTIFY_CLIENT_ID', 'SPOTIFY_CLIENT_SECRET' and 'SECRET_KEY' for Flask.
+  - **Set Environment Variables:** Ensure you have your own credentials such as:
+    -  'OWN_API_KEY'  for OpenWeather API.
+     - 'OWN_ACCOUNT_SID' and 'OWN_AUTH_TOKEN' for Twilio API.
+     - 'SECRET_KEY' for Flask.
     
   - **Run the Application:**
   
